@@ -1,36 +1,32 @@
 <template>
-<div>
+  <div>
     <CreateComponent></CreateComponent>
-    <SinglePostComponent></SinglePostComponent>
-</div>
+    <IndexComponent></IndexComponent>
+  </div>
 </template>
 
 <script>
-import SinglePostComponent from './SinglePostComponent.vue';
-import CreateComponent from './CreateComponent.vue';
+import CreateComponent from "./CreateComponent.vue";
+import IndexComponent from "./IndexComponent.vue";
 
 export default {
-    name: "PostComponent",
+  name: "PostComponent",
 
-    data() {
-        return {
-            persons: null
-        }
-    },
+  data() {
+    return {
+      persons: null,
+    };
+  },
 
-    mounted() {
-    },
+  mounted() {},
 
-    methods: {
-    },
+  methods: {},
 
-    components: {
-        SinglePostComponent,
-        CreateComponent
-    }
-}
+  components: {
+    CreateComponent,
+    IndexComponent
+  },
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
